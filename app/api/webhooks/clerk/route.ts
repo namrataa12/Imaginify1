@@ -71,6 +71,7 @@ export async function POST(req: Request) {
     };
 
     const newUser = await createUser(user);
+    console.log("user created in webhook"+newUser);
 
     // Set public metadata
     if (newUser) {
